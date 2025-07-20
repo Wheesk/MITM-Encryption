@@ -69,8 +69,6 @@ Scripts in /aes_des/ encrypt and decrypt a sample message.
 
 Comparasion table: 
 
-
-<img src="images/table.jpg"/>
 <img src="images/table.jpg" />
 
 # RSA Encryption: 
@@ -230,10 +228,3 @@ Use this repo to learn and defend—never to harm.
 Feel free to explore, fork, or reach out if you want to talk security, Wireshark, or Python!
 
 Stay curious, and remember: the best hackers are the best learners.
-
-<img src="images/wireshark.jpg"/>
-
-2) Decrypting the Packet Payload (Receiver Script)
-
-<img src="images/decrypt.jpg"/>
->>>>>>> 8d9a03bf3768217c78e85d1b89dfae4103dbdafb

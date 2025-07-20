@@ -65,7 +65,6 @@ Step-by-step explanation:
 
 <img src="images/des.jpg"/>
 
-<img src="images/des.jpg" />
 Scripts in /aes_des/ encrypt and decrypt a sample message.
 
 Comparasion table: 

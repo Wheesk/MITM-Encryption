@@ -63,28 +63,50 @@ Step-by-step explanation:
 3.	The message is padded, encrypted, and the result plus IV are printed out.
 4.	For decryption, the same key and IV are used, and the decrypted message is shown
 
+<<<<<<< HEAD
 <img src="images/des.jpg"/>
+=======
+<img src="images/des.jpg" />
+>>>>>>> 8d9a03bf3768217c78e85d1b89dfae4103dbdafb
 Scripts in /aes_des/ encrypt and decrypt a sample message.
 
 Comparasion table: 
 
+<<<<<<< HEAD
 <img src="images/table.jpg"/>
+=======
+<img src="images/table.jpg" />
 
-RSA Encryption: 
-Step 1: Set up the keys
+# RSA Encryption: 
+## Step 1: Set up the keys
+>>>>>>> 8d9a03bf3768217c78e85d1b89dfae4103dbdafb
+
 •	We pick two large prime numbers, p and q.
+
 •	Calculate n = p * q (the modulus for both keys).
+
 •	Calculate phi_n = (p-1)*(q-1) (used in key calculations).
+
 •	Choose a public exponent e (commonly 17, 65537, etc.).
+
 •	Calculate the private exponent d, which is used for decryption.
-Step 2: Encrypt the message
+
+## Step 2: Encrypt the message
+
 •	For each character in the message, get its Unicode number (ord(char)).
+
 •	Encrypt that number with the formula:
+
 encrypted_char = (char_number ^ e) mod n
+
 •	This is done for each character and stored as a list.
-Step 3: Decrypt the message
+
+## Step 3: Decrypt the message
+
 •	For each encrypted number, apply the formula:
+
 decrypted_char = (encrypted_number ^ d) mod n
+
 •	Convert back to the character using chr().
 
 <img src="images/rsa.jpg"/>
@@ -117,6 +139,7 @@ key = b'8bytekey'
 
 Wireshark: 
 
+<<<<<<< HEAD
 <img src="images/wireshark.jpg" />
 
 2) Decrypting the Packet Payload (Receiver Script)
@@ -213,3 +236,10 @@ Use this repo to learn and defend—never to harm.
 Feel free to explore, fork, or reach out if you want to talk security, Wireshark, or Python!
 
 Stay curious, and remember: the best hackers are the best learners.
+=======
+<img src="images/wireshark.jpg"/>
+
+2) Decrypting the Packet Payload (Receiver Script)
+
+<img src="images/decrypt.jpg"/>
+>>>>>>> 8d9a03bf3768217c78e85d1b89dfae4103dbdafb

@@ -63,23 +63,19 @@ Step-by-step explanation:
 3.	The message is padded, encrypted, and the result plus IV are printed out.
 4.	For decryption, the same key and IV are used, and the decrypted message is shown
 
-<<<<<<< HEAD
 <img src="images/des.jpg"/>
-=======
+
 <img src="images/des.jpg" />
->>>>>>> 8d9a03bf3768217c78e85d1b89dfae4103dbdafb
 Scripts in /aes_des/ encrypt and decrypt a sample message.
 
 Comparasion table: 
 
-<<<<<<< HEAD
+
 <img src="images/table.jpg"/>
-=======
 <img src="images/table.jpg" />
 
 # RSA Encryption: 
 ## Step 1: Set up the keys
->>>>>>> 8d9a03bf3768217c78e85d1b89dfae4103dbdafb
 
 •	We pick two large prime numbers, p and q.
 
@@ -139,7 +135,6 @@ key = b'8bytekey'
 
 Wireshark: 
 
-<<<<<<< HEAD
 <img src="images/wireshark.jpg" />
 
 2) Decrypting the Packet Payload (Receiver Script)
@@ -236,7 +231,7 @@ Use this repo to learn and defend—never to harm.
 Feel free to explore, fork, or reach out if you want to talk security, Wireshark, or Python!
 
 Stay curious, and remember: the best hackers are the best learners.
-=======
+
 <img src="images/wireshark.jpg"/>
 
 2) Decrypting the Packet Payload (Receiver Script)

@@ -31,7 +31,7 @@ Gateway: Standard home router
 
 Network Interface: eth0
 
-<img src="images/config.jpg" width="300"/>
+<img src="images/config.jpg"/>
 
 ---
 
@@ -46,7 +46,7 @@ Step-by-step explanation:
 4.	The code prints out the encrypted data and the special IV (Initialization Vector) needed to decrypt.
 5.	To decrypt, we use the same key and IV, and the code prints the decrypted message.
 
-<img src="images/aes.jpg" width="300"/>
+<img src="images/aes.jpg"/>
 
 DES Encryption and Decryption (with CBC Mode)
 Step-by-step explanation:
@@ -55,31 +55,45 @@ Step-by-step explanation:
 3.	The message is padded, encrypted, and the result plus IV are printed out.
 4.	For decryption, the same key and IV are used, and the decrypted message is shown
 
-<img src="images/des.jpg" width="300"/>
+<img src="images/des.jpg" />
 Scripts in /aes_des/ encrypt and decrypt a sample message.
 
 Comparasion table: 
 
-<img src="images/table.jpg" width="300"/>
+<img src="images/table.jpg" />
 
-RSA Encryption: 
-Step 1: Set up the keys
+# RSA Encryption: 
+## Step 1: Set up the keys
+
 •	We pick two large prime numbers, p and q.
+
 •	Calculate n = p * q (the modulus for both keys).
+
 •	Calculate phi_n = (p-1)*(q-1) (used in key calculations).
+
 •	Choose a public exponent e (commonly 17, 65537, etc.).
+
 •	Calculate the private exponent d, which is used for decryption.
-Step 2: Encrypt the message
+
+## Step 2: Encrypt the message
+
 •	For each character in the message, get its Unicode number (ord(char)).
+
 •	Encrypt that number with the formula:
+
 encrypted_char = (char_number ^ e) mod n
+
 •	This is done for each character and stored as a list.
-Step 3: Decrypt the message
+
+## Step 3: Decrypt the message
+
 •	For each encrypted number, apply the formula:
+
 decrypted_char = (encrypted_number ^ d) mod n
+
 •	Convert back to the character using chr().
 
-<img src="images/rsa.jpg" width="300"/>
+<img src="images/rsa.jpg"/>
 
 --- 
 
@@ -105,12 +119,12 @@ key = b'8bytekey'
 
 1) Encrypting the packet payload(sender script)
 
-<img src="images/encrypt.jpg" width="300"/>
+<img src="images/encrypt.jpg"/>
 
 Wireshark: 
 
-<img src="images/wireshark.jpg" width="300"/>
+<img src="images/wireshark.jpg"/>
 
 2) Decrypting the Packet Payload (Receiver Script)
 
-<img src="images/decrypt.jpg" width="300"/>
+<img src="images/decrypt.jpg"/>

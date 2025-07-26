@@ -120,12 +120,6 @@ key = b'8bytekey'
 
 - I used the same key in both the sender and receiver scripts, so that both can encrypt and decrypt messages
 
-•	This key is 8 bytes long, which is required for DES.
-•	I used the same key in both the sender and receiver scripts, so that both can encrypt and decrypt messages
-
-•	This key is 8 bytes long, which is required for DES.
-•	I used the same key in both the sender and receiver scripts, so that both can encrypt and decrypt messages
-
 1) Encrypting the packet payload(sender script)
 
 <img src="images/encrypt.jpg"/>
